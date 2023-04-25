@@ -23,6 +23,12 @@ header img{
     height: 100px;
     width: 100px;
 }
+nav input{
+    display: none;
+}
+nav label{
+    display: none;
+}
 nav{
     align-self: center;
 }
@@ -170,6 +176,37 @@ a button:hover{
     margin-bottom: 40px;
     margin-top: 30px;
 }
+@media screen and (max-width: 576px){
+    .banner{
+        height: 70%;
+        overflow:hidden;
+    }
+    .banner img{
+        width: 200%;
+        margin-left: -200px;
+    }
+    .texto-inicial{
+        height: auto;
+        width: auto;
+        top: 150px;
+        left: 10%;
+        right: 10%;
+        font-size:85%;
+    }
+    .texto-inicial h1{
+        margin-top: -20px;
+    }
+    .testimonio-clientes{
+        height: auto;
+    }
+    .testimonio{
+        flex-direction: column;
+        height: auto;
+        margin: 30px;
+    }
+}
+
+
 
 /* CSS PAGE QUE HACEMOS */
 .main-qh{
@@ -344,3 +381,27 @@ footer p{
     width: 40px;
     height: 40px;
 }
+@media screen and (max-width: 576px){
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        font-size: 12px;
+        padding: 10px;
+    }
+    .izq-footer{
+        width: 90%;
+    }
+    .firma{
+        display: none;
+    }
+    .rrss{
+        width: 100%;
+    }
+/* MENU HAMBURGUESA */
+    nav ul{
+        display: none;
+    }
+}
+
+
