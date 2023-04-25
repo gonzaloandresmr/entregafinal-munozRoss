@@ -23,31 +23,15 @@ header img{
     height: 100px;
     width: 100px;
 }
-/* NAVICON */
-.menu-movil{
-    color: #eeeeee;
-    display: none;
-    border-radius: 10px;
-    border: 1px solid #eeeeee;
-    padding: 10px;
-    font-family:  'Roboto', sans-serif;
-}
-/* NAVICON */
-nav input{
-    display: none;
-}
-nav label{
-    display: none;
-}
-nav{
+.menu{
     align-self: center;
 }
-nav a{
+.menu a{
     text-decoration:none;
     color:inherit;
     font-size:13px;
 } 
-nav li{
+.menu li{
     display:inline-block;
     width:105px;
     padding: 5px;
@@ -58,10 +42,13 @@ nav li{
     border-radius: 3px;
     cursor: pointer;
 }
-nav li:hover{
+.menu li:hover{
     background-color:#000;
     border:2px solid #025752;
     color:#fff;
+}
+.menu-movil{
+    display: none;
 }
 
 /* A PARTIR DE ACA EL CSS DEL MAIN */
@@ -317,7 +304,6 @@ footer{
     justify-content: space-around;
     height: 200px;
     font-size: 13px;
-
 }
 .izq-footer{
     color: #14c9c0;
@@ -359,9 +345,60 @@ footer p{
     height: 40px;
 }
 @media screen and (max-width:490px){
-    nav ul {
+    .menu ul {
         display: none;
     }
+
+/* MENU MOVIL */
+    .menu-movil{
+        display: block;
+        align-self: center;
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        height: 30px;
+        width: 100%;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: #000000;
+        color: #fff;
+        opacity: 0.9;
+        border-top: 1px solid #025752;
+    }
+    .menu-movil a{
+        text-decoration:none;
+        color:inherit;
+        font-size:13px;
+    } 
+    .menu-movil ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2px;
+        padding: 0;
+        margin: 0;
+    }
+    .menu-movil li{
+        display: inline-block;
+        width: 20%;
+        border: 1px solid #ddd;
+        padding: 2px;
+        background-color: #303030;
+        text-align:center;
+        color:#e4e4e4;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 80%;
+        
+    }
+    .menu-movil li:hover{
+        background-color:#000;
+        border:2px solid #025752;
+        color:#fff;
+    }
+/* MENU MOVIL */
+
     .banner{
         height: auto;
         overflow:hidden;
@@ -395,6 +432,7 @@ footer p{
         height: auto;
         font-size: 12px;
         padding: 10px;
+        padding-bottom: 30px;
     }
     .izq-footer{
         width: 90%;
@@ -440,9 +478,59 @@ footer p{
     }
 }
 @media screen and (min-width:491px) and (max-width:768px){
-    nav ul{
+    .menu ul {
         display: none;
     }
+
+/* INICIO MENU MOVIL */
+    .menu-movil{
+        display: block;
+        align-self: center;
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        height: 30px;
+        width: 100%;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: #252525;
+        color: #fff;
+        opacity: 0.9;
+        border-top: 1px solid #025752;
+    }
+    .menu-movil a{
+        text-decoration:none;
+        color:inherit;
+        font-size:13px;
+    } 
+    .menu-movil ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2px;
+        padding: 0;
+        margin: 0;
+    }
+    .menu-movil li{
+        display: inline-block;
+        width: 20%;
+        border: 1px solid #ddd;
+        padding: 2px;
+        background-color: #252525;
+        text-align:center;
+        color:#e4e4e4;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 80%;
+    }
+    .menu-movil li:hover{
+        background-color:#000;
+        border:2px solid #025752;
+        color:#fff;
+    }
+/* FIN MENU MOVIL */
+
     .banner{
         height: auto;
         overflow:hidden;
@@ -476,6 +564,7 @@ footer p{
         height: auto;
         font-size: 12px;
         padding: 10px;
+        padding-bottom: 30px;
     }
     .izq-footer{
         width: 90%;
@@ -525,4 +614,5 @@ footer p{
     .tarjetaqh{ 
         height: auto;
     }
+
 }
