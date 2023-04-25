@@ -23,6 +23,16 @@ header img{
     height: 100px;
     width: 100px;
 }
+/* NAVICON */
+.menu-movil{
+    color: #eeeeee;
+    display: none;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    padding: 10px;
+    font-family:  'Roboto', sans-serif;
+}
+/* NAVICON */
 nav input{
     display: none;
 }
@@ -422,6 +432,12 @@ footer p{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     }
+    #menu_icon {
+        display: block;
+    }
+    .menu-movil{
+        display: block;
+    }
 }
 @media screen and (min-width:491px) and (max-width:768px){
     nav ul{
@@ -496,6 +512,12 @@ footer p{
     .grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    }
+    #menu_icon {
+        display: block;
+    }
+    .menu-movil{
+        display: block;
     }
 }
 @media screen and (min-width:769px) and (max-width:1024px){
