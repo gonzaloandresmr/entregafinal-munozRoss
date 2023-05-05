@@ -4,24 +4,34 @@
     margin:0;
     padding:0;
 }
-
+body{
+    margin-top: 75px;
+}
 header{
     background-color: rgb(26, 26, 26); 
-    height: 86px;
+    height: 75px;
     border-bottom:3px solid #025752;
     display: flex;
     justify-content: space-around;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+    opacity: 0.95;
 }
 
 .logo-header{
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
 }
 
 header img{
-    height: 100px;
-    width: 100px;
+    height: 84px;
+    width: 84px;
+    transition: 0.5s;
+}
+header img:hover{
+    scale: 1.1;
 }
 .menu{
     align-self: center;
@@ -36,11 +46,13 @@ header img{
     width:105px;
     padding: 5px;
     background-color: #303030;
+    border: 2px solid #303030;
     text-align:center;
     color:#e4e4e4;
     font-family: 'Roboto', sans-serif;
     border-radius: 3px;
     cursor: pointer;
+    transition: 0.2s;
 }
 .menu li:hover{
     background-color:#000;
@@ -54,11 +66,12 @@ header img{
 /* A PARTIR DE ACA EL CSS DEL MAIN */
 
 .banner{
-    width: auto;
-    overflow:hidden;
-}
-.banner img{
     width: 100%;
+    height: 480px;
+    background-image: url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .texto-inicial{
     height: 200px;
@@ -124,6 +137,12 @@ a button:hover{
     margin-top: 30px; 
     box-shadow: 8px 8px 12px 0px rgba(0,0,0,0.66);
     text-align: center;
+    transition: 0.5s;
+
+}
+.tarjeta:hover{
+    scale: 1.01;
+
 }
 .tarjeta h3{
     margin-top: 10px;
@@ -217,16 +236,7 @@ a button:hover{
 .main-sn p{
     font-family: 'Roboto', sans-serif;
 }
-/* CSS PAGINA PROYECTOS */
 
-.main-proy{
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 30px;
-    margin-bottom: 80px;
-    font-family: 'Roboto', sans-serif;
-
-}
 /* CSS PAGINA CONTACTO */
 
 .main-contacto{
@@ -270,6 +280,14 @@ a button:hover{
     color: #025752;
 }
 /* CSS PAGINA PROYECTOS */
+.main-proy{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    font-family: 'Roboto', sans-serif;
+
+}
 main h1{
     margin-top: 40px;
     margin-bottom: 30px;
@@ -305,7 +323,11 @@ main h1{
     align-items: center;
     background-color: #ffffff;
     overflow: hidden;
+    transition: 0.2s;
 }  
+.grid-item:hover{
+    scale: 1.05;
+}
   .grid-item img {
     display: block;
     width: 100%;
@@ -339,6 +361,10 @@ footer p{
 .logo-footer{
     height: 100px;
     width: 100px;
+    transition: 0.5s;
+}
+.logo-footer:hover{
+    scale: 1.1;
 }
 .firma{
     width: 30%;
@@ -362,19 +388,26 @@ footer p{
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    transition: 0.5s;
+}
+.rrss img:hover{
+    scale: 1.1;
 }
 @media screen and (max-width:490px){
+    
+    .logo-header{
+        margin: auto;
+    }
     .menu ul {
         display: none;
     }
 
-/* MENU MOVIL */
+/* INICIO MENU MOVIL */
     .menu-movil{
         display: block;
         align-self: center;
         position: fixed;
         bottom: 0;
-        z-index: 1000;
         height: 30px;
         width: 100%;
         border-top-right-radius: 5px;
@@ -383,6 +416,7 @@ footer p{
         color: #fff;
         opacity: 0.9;
         border-top: 1px solid #025752;
+        z-index: 2000;
     }
     .menu-movil a{
         text-decoration:none;
@@ -416,15 +450,10 @@ footer p{
         border:2px solid #025752;
         color:#fff;
     }
-/* MENU MOVIL */
+/* FIN MENU MOVIL */
 
     .banner{
-        height: auto;
-        overflow:hidden;
-    }
-    .banner img{
-        width: 200%;
-        margin-left: -200px;
+        height: 400px;
     }
     .texto-inicial{
         height: auto;
@@ -497,6 +526,10 @@ footer p{
     }
 }
 @media screen and (min-width:491px) and (max-width:768px){
+
+    .logo-header{
+        margin: auto;
+    }
     .menu ul {
         display: none;
     }
@@ -507,7 +540,6 @@ footer p{
         align-self: center;
         position: fixed;
         bottom: 0;
-        z-index: 1000;
         height: 30px;
         width: 100%;
         border-top-right-radius: 5px;
@@ -516,6 +548,7 @@ footer p{
         color: #fff;
         opacity: 0.9;
         border-top: 1px solid #025752;
+        z-index: 2000;
     }
     .menu-movil a{
         text-decoration:none;
@@ -551,12 +584,7 @@ footer p{
 /* FIN MENU MOVIL */
 
     .banner{
-        height: auto;
-        overflow:hidden;
-    }
-    .banner img{
-        width: 125%;
-        margin-left: -100px;
+        height: 400px;
     }
     .texto-inicial{
         height: auto;
