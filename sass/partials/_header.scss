@@ -1,0 +1,175 @@
+header{
+    background-color: $color-2; 
+    height: 75px;
+    border-bottom:3px solid $color-1;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+    opacity: 0.95;
+}
+
+.logo-header{
+    height: 75px;
+    width: 75px;
+}
+
+header img{
+    height: 84px;
+    width: 84px;
+    transition: 0.5s;
+}
+header img:hover{
+    scale: 1.1;
+}
+.menu{
+    align-self: center;
+}
+.menu a{
+    text-decoration:none;
+    color:inherit;
+    font-size:13px;
+} 
+.menu li{
+    display:inline-block;
+    width:105px;
+    padding: 5px;
+    background-color: $color-3;
+    border: 2px solid $color-3;
+    text-align:center;
+    color:$color-5;
+    font-family: $font-1;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.menu li:hover{
+    background-color:$color-2;
+    border:2px solid $color-1;
+    color:$color-4;
+}
+.menu-movil{
+    display: none;
+}
+
+
+@media screen and (max-width:490px){
+    
+    .logo-header{
+        margin: auto;
+    }
+    .menu ul {
+        display: none;
+    }
+
+/* INICIO MENU MOVIL */
+    .menu-movil{
+        display: block;
+        align-self: center;
+        position: fixed;
+        bottom: 0;
+        height: 30px;
+        width: 100%;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: $color-2;
+        color: $color-4;
+        opacity: 0.9;
+        border-top: 1px solid $color-1;
+        z-index: 2000;
+    }
+    .menu-movil a{
+        text-decoration:none;
+        color:inherit;
+        font-size:13px;
+    } 
+    .menu-movil ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2px;
+        padding: 0;
+        margin: 0;
+    }
+    .menu-movil li{
+        display: inline-block;
+        width: 20%;
+        border: 1px solid $color-5;
+        padding: 2px;
+        background-color: $color-3;
+        text-align:center;
+        color:$color-5;
+        font-family: $font-1;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 80%;
+        
+    }
+    .menu-movil li:hover{
+        background-color:$color-2;
+        border:2px solid $color-1;
+        color:$color-4;
+    }
+}
+
+
+@media screen and (min-width:491px) and (max-width:768px){
+
+    .logo-header{
+        margin: auto;
+    }
+    .menu ul {
+        display: none;
+    }
+
+/* INICIO MENU MOVIL */
+    .menu-movil{
+        display: block;
+        align-self: center;
+        position: fixed;
+        bottom: 0;
+        height: 30px;
+        width: 100%;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: $color-3;
+        color: $color-4;
+        opacity: 0.9;
+        border-top: 1px solid $color-1;
+        z-index: 2000;
+    }
+    .menu-movil a{
+        text-decoration:none;
+        color:inherit;
+        font-size:13px;
+    } 
+    .menu-movil ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2px;
+        padding: 0;
+        margin: 0;
+    }
+    .menu-movil li{
+        display: inline-block;
+        width: 20%;
+        border: 1px solid $color-5;
+        padding: 2px;
+        background-color: $color-3;
+        text-align:center;
+        color:$color-5;
+        font-family: $font-1;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 80%;
+    }
+    .menu-movil li:hover{
+        background-color:$color-2;
+        border:2px solid $color-1;
+        color:$color-4;
+    }
+}
+/* FIN MENU MOVIL */

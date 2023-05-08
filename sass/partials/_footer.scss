@@ -1,0 +1,96 @@
+footer{
+    border-top: 3px solid $color-1;
+    font-family: $font-2;
+    background-color: $color-2; 
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    font-size: 13px;
+}
+.izq-footer{
+    color: $color-5;
+    padding: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer p{
+    text-align: center;
+}
+
+.logo-footer{
+    height: 100px;
+    width: 100px;
+    transition: 0.5s;
+}
+.logo-footer:hover{
+    scale: 1.1;
+}
+.firma{
+    width: 30%;
+    color: $color-6;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.rrss{
+    width: 30%;
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+}
+.rrss li{
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+}
+.rrss img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+}
+.rrss img:hover{
+    scale: 1.1;
+}
+
+@media screen and (max-width:490px){
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        font-size: 12px;
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+    .izq-footer{
+        width: 90%;
+    }
+    .firma{
+        display: none;
+    }
+    .rrss{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:491px) and (max-width:768px){
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        font-size: 12px;
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+    .izq-footer{
+        width: 90%;
+    }
+    .firma{
+        display: none;
+    }
+    .rrss{
+        width: 100%;
+    }
+}
