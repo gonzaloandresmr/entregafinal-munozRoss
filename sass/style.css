@@ -200,6 +200,10 @@ header img:hover {
   margin-top: -10px;
 }
 
+.texto-inicial button {
+  margin-top: 20px;
+}
+
 a button {
   background-color: #fff;
   color: #025752;
@@ -361,8 +365,7 @@ a button:hover {
 }
 
 .titulo-qh {
-  text-align: center;
-  margin-top: 30px;
+  margin-top: 120px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -383,19 +386,23 @@ a button:hover {
 }
 
 /* CSS PAGE SOBRE NOSOTROS */
+.body-sn {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .main-sn {
   padding-left: 10%;
   padding-right: 10%;
-  margin-top: 50px;
-  margin-bottom: 80px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .titulo-sn {
-  text-align: center;
-  margin-top: 30px;
+  margin-bottom: 30px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -409,6 +416,10 @@ a button:hover {
   padding-right: 10%;
   margin-top: 50px;
   margin-bottom: 80px;
+}
+
+.main-contacto h1 {
+  margin-top: 100px;
 }
 
 .mapa-form {
@@ -451,13 +462,13 @@ a button:hover {
 .main-proy {
   padding-left: 10%;
   padding-right: 10%;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 80px;
   font-family: "Roboto", sans-serif;
 }
 
-main h1 {
-  margin-top: 40px;
+.main-proy h1 {
+  margin-top: 120px;
   margin-bottom: 30px;
   display: flex;
 }
@@ -581,6 +592,7 @@ footer {
   justify-content: space-around;
   height: auto;
   font-size: 13px;
+  margin-top: auto;
 }
 
 .izq-footer {
