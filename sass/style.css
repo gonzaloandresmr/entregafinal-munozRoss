@@ -376,13 +376,17 @@ a button:hover {
 }
 
 .tarjetaqh {
-  height: 100px;
+  height: auto;
   padding: 20px;
   border-radius: 20px;
   font-family: "Roboto", sans-serif;
   background-color: #e6e6e6;
   margin-top: 30px;
   box-shadow: 8px 8px 12px 0px rgba(0, 0, 0, 0.66);
+}
+
+.tarjetaqh h2 {
+  margin-bottom: 15px;
 }
 
 /* CSS PAGE SOBRE NOSOTROS */
