@@ -25,17 +25,18 @@ header img:hover{
     scale: 1.1;
 }
 .menu{
-    align-self: center;
+    align-self: center !important;
 }
 .menu a{
     text-decoration:none;
     color:inherit;
     font-size:13px;
 } 
+
 .menu li{
     display:inline-block;
-    width:105px;
-    padding: 5px;
+    width:105px !important;
+    padding: 5px !important;
     background-color: $color-3;
     border: 2px solid $color-3;
     text-align:center;
