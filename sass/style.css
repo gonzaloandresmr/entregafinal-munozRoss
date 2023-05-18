@@ -206,7 +206,7 @@ header img:hover {
 .banner .texto-inicial h1 {
   margin-top: -10px;
 }
-.banner .texto-inicial .button_banner, .banner .texto-inicial .button_llamadoaccion {
+.banner .texto-inicial .button_banner {
   margin-top: 20px;
   background-color: #fff;
   color: #025752;
@@ -218,7 +218,7 @@ header img:hover {
   border-radius: 20px;
   cursor: pointer;
 }
-.banner .texto-inicial .button_banner:hover, .banner .texto-inicial .button_llamadoaccion:hover {
+.banner .texto-inicial .button_banner:hover {
   background-color: #025752;
   color: #fff;
   border: 2px solid #fff;
@@ -301,6 +301,24 @@ header img:hover {
   gap: 30px;
   margin-bottom: 40px;
   margin-top: 30px;
+}
+
+.button_llamadoaccion {
+  background-color: #fff;
+  color: #025752;
+  border: 2px solid #025752;
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button_llamadoaccion:hover {
+  background-color: #025752;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 @media screen and (max-width: 490px) {
