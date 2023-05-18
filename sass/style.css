@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-top: 75px;
+}
+
 header {
   background-color: rgb(26, 26, 26);
   height: 75px;
@@ -28,7 +37,7 @@ header img:hover {
 }
 
 .menu {
-  align-self: center;
+  align-self: center !important;
 }
 
 .menu a {
@@ -39,8 +48,8 @@ header img:hover {
 
 .menu li {
   display: inline-block;
-  width: 105px;
-  padding: 5px;
+  width: 105px !important;
+  padding: 5px !important;
   background-color: #303030;
   border: 2px solid #303030;
   text-align: center;
@@ -180,8 +189,7 @@ header img:hover {
   background-size: cover;
   background-position: center;
 }
-
-.texto-inicial {
+.banner .texto-inicial {
   height: 200px;
   width: 350px;
   border-radius: 20px;
@@ -195,16 +203,11 @@ header img:hover {
   z-index: 100;
   font-family: "Roboto", sans-serif;
 }
-
-.texto-inicial h1 {
+.banner .texto-inicial h1 {
   margin-top: -10px;
 }
-
-.texto-inicial button {
+.banner .texto-inicial .button_banner, .banner .texto-inicial .button_llamadoaccion {
   margin-top: 20px;
-}
-
-a button {
   background-color: #fff;
   color: #025752;
   border: 2px solid #025752;
@@ -215,8 +218,7 @@ a button {
   border-radius: 20px;
   cursor: pointer;
 }
-
-a button:hover {
+.banner .texto-inicial .button_banner:hover, .banner .texto-inicial .button_llamadoaccion:hover {
   background-color: #025752;
   color: #fff;
   border: 2px solid #fff;
@@ -229,20 +231,17 @@ a button:hover {
   display: flex;
   flex-direction: column;
 }
-
 .tarjetas-servicios h2 {
   display: flex;
   justify-content: center;
 }
-
-.grupo-tarjetas {
+.tarjetas-servicios .grupo-tarjetas {
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
-
-.tarjeta {
+.tarjetas-servicios .grupo-tarjetas .tarjeta {
   width: 250px;
   height: 300px;
   border: 0px solid #025752;
@@ -254,14 +253,12 @@ a button:hover {
   text-align: center;
   transition: 0.5s;
 }
-
-.tarjeta:hover {
-  scale: 1.01;
-}
-
-.tarjeta h3 {
+.tarjetas-servicios .grupo-tarjetas .tarjeta h3 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.tarjetas-servicios .grupo-tarjetas .tarjeta:hover {
+  scale: 1.01;
 }
 
 .testimonio-clientes {
@@ -272,15 +269,13 @@ a button:hover {
   margin-top: 30px;
   background-color: #e6e6e6;
 }
-
 .testimonio-clientes h2 {
   display: flex;
   justify-content: center;
   margin-bottom: 0px;
   margin-top: 30px;
 }
-
-.testimonio {
+.testimonio-clientes .testimonio {
   display: flex;
   flex-direction: row;
   height: 200px;
@@ -289,8 +284,7 @@ a button:hover {
   margin-right: 50px;
   align-items: center;
 }
-
-.testimonio-clientes img {
+.testimonio-clientes .testimonio img {
   height: 100px;
   width: 100px;
   background-repeat: no-repeat;
@@ -415,6 +409,11 @@ a button:hover {
 }
 
 /* CSS PAGINA CONTACTO */
+#ul-contacto {
+  margin: 0;
+  padding: 0;
+}
+
 .main-contacto {
   padding-left: 10%;
   padding-right: 10%;
@@ -691,12 +690,4 @@ footer p {
   .rrss {
     width: 100%;
   }
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin-top: 75px;
 }/*# sourceMappingURL=style.css.map */
