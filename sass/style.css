@@ -291,6 +291,12 @@ header img:hover {
   border-radius: 50%;
   border: 1px solid #025752;
 }
+.testimonio-clientes .testimonio p {
+  font-style: italic;
+}
+.testimonio-clientes .testimonio b {
+  font-style: normal;
+}
 
 .llamado-accion {
   display: flex;
@@ -427,25 +433,26 @@ header img:hover {
 }
 
 /* CSS PAGINA CONTACTO */
-#ul-contacto {
-  margin: 0;
-  padding: 0;
-}
-
 .main-contacto {
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 50px;
   margin-bottom: 80px;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-contacto h1 {
   margin-top: 100px;
+  font-family: "Roboto", sans-serif;
 }
 
 .mapa-form {
   display: flex;
   flex-direction: column;
+}
+
+.mapa-form h2 {
+  font-family: "Roboto", sans-serif;
 }
 
 .mapa-form iframe {
@@ -455,7 +462,6 @@ header img:hover {
 }
 
 .mapa-form .formulario {
-  width: 100%;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -463,19 +469,40 @@ header img:hover {
 .form-control {
   background-color: #e6e6e6;
   border-radius: 30px;
-  border-color: #e6e6e6;
+  border-style: none;
+  height: 10px;
+  padding: 8px;
+}
+
+.form-control:focus {
+  outline: none;
+  border: 2px solid #025752;
+}
+
+.formulario .nombre, .formulario .telefono, .formulario .email, .formulario .textarea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.formulario .textarea .form-control {
+  border-radius: 10px;
 }
 
 .btn {
   border-radius: 30px;
   width: 100%;
   background-color: #025752;
-  border-color: #e6e6e6;
+  border-style: none;
+  height: 30px;
+  color: #fff;
+  margin-top: 10px;
 }
 
 .btn:hover {
   background-color: #e6e6e6;
-  border-color: #025752;
+  border: 2px solid #025752;
   color: #025752;
 }
 

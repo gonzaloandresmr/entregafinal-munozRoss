@@ -48,22 +48,23 @@
 }
 
 /* CSS PAGINA CONTACTO */
-#ul-contacto{
-    margin: 0;
-    padding: 0;
-}
 .main-contacto{
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 50px;
     margin-bottom: 80px;
+    font-family: $font-1;
 }
 .main-contacto h1{
     margin-top: 100px;
+    font-family: $font-1;
 }
 .mapa-form{
     display: flex;
     flex-direction: column;
+}
+.mapa-form h2{
+    font-family: $font-1;
 }
 .mapa-form iframe{
     width: 100%;
@@ -71,24 +72,43 @@
     margin-bottom: 30px;
 }
 .mapa-form .formulario{
-    width: 100%;
     margin-top: 20px;
     margin-bottom: 30px;
-} 
+}
 .form-control {
     background-color: $color-5;
     border-radius: 30px;
-    border-color: $color-5;
+    border-style: none;
+    height: 10px;
+    padding: 8px;
+}
+.form-control:focus{
+    outline: none;
+    border: 2px solid $color-1;
+}
+.formulario {
+    .nombre, .telefono, .email, .textarea{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+.formulario .textarea .form-control{
+    border-radius: 10px;
 }
 .btn{
     border-radius: 30px;
     width: 100%;
     background-color: $color-1;
-    border-color: $color-5;
+    border-style: none;
+    height: 30px;
+    color: $color-4;
+    margin-top: 10px;
 }
 .btn:hover{
     background-color: $color-5;
-    border-color: $color-1;
+    border: 2px solid $color-1;
     color: $color-1;
 }
 /* CSS PAGINA PROYECTOS */
