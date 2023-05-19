@@ -25,6 +25,15 @@
 .tarjetaqh h2{
     margin-bottom: 15px;
 }
+.contenido-tarjeta{
+    display: flex;
+    gap: 30px;
+}
+.tarjetaqh img{
+    width: 30%;
+    height: 30%;
+    align-self: center;
+}
 /* CSS PAGE SOBRE NOSOTROS */
 .body-sn{
     display: flex;
@@ -169,6 +178,15 @@
 
 
 @media screen and (max-width:490px){
+    .contenido-tarjeta{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .tarjetaqh img{
+        width: 70%;
+        height: 70%;
+    }
     .tarjetaqh{ 
         height: auto;
     }   
@@ -200,7 +218,15 @@
 
 
 @media screen and (min-width:491px) and (max-width:768px){
-
+    .contenido-tarjeta{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .tarjetaqh img{
+        width: 70%;
+        height: 70%;
+    }
     .tarjetaqh{ 
         height: auto;
     }   
